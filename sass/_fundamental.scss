@@ -1,0 +1,34 @@
+//BLOCK-2 (section-fundamental), BLOCK-3 (section- why)
+.section-fundamental{
+  padding: 3em 0;
+  .sub-header{
+    max-width: 610px;
+  }
+  .section-body-text{
+    line-height: 2;
+    margin-top: 3em;
+  }
+}
+.section-fundamental, .section-why{
+  .sub-header{
+    font-size: 1.2em;
+    text-align: center;
+    margin: 1em auto;
+  }
+  .section-body{
+    margin-top: 2em;
+  }
+}
+.section-why{
+  padding-top: 3em;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 700px; //TEMP!!
+  @media screen and (max-width: $screen-tablet) {
+    background-image: url("../img/why-bg-lowres.jpg");
+  }
+  @media screen and (min-width: $screen-tablet) {
+    background-image: url("../img/why-bg-hires.jpg");
+  }
+}

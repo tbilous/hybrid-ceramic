@@ -25,6 +25,7 @@
 $(document).ready(function () {
 
 //GALLERY THUMBS BG
+/*
     function thumbsBgA() {
         $(".gallery-wrapper li a").each(function () {
             var imgID = this.href;
@@ -33,9 +34,10 @@ $(document).ready(function () {
     }
 
     window.onload = thumbsBgA;
+*/
 
 //TREE FAQ
-
+/*
     $(function () {
         $('.tree li:has(ul)').addClass('parent_li well tree-patent-well').find(' > span').attr('title', 'Collapse this branch');
         $('.tree li.parent_li > span').on('click', function (e) {
@@ -49,7 +51,7 @@ $(document).ready(function () {
             }
             e.stopPropagation();
         });
-    });
+    });*/
 //SPY MENU
 // Cache selectors
     var lastId,
@@ -100,6 +102,7 @@ $(document).ready(function () {
     });
 
 //Scroll MONITOR
+/*
     $('.s-monitor').each(function (i, element) {
 
         var offsetTop = $(this).data('top');
@@ -117,8 +120,10 @@ $(document).ready(function () {
             $(element).removeClass(action)
         });
     });
+*/
 
 //COUNTER
+/*
     var tomorrow = moment().endOf('day').valueOf() + 1;
     var now = moment().valueOf();
     var interval = (tomorrow - now) / 1000;
@@ -132,6 +137,7 @@ $(document).ready(function () {
         countdown: true,
         language: 'ru'
     });
+*/
 
 //CENTERED MODAL
     $(".start-modal").click(function () {
