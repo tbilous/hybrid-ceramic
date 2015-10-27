@@ -1,0 +1,30 @@
+{
+  "name": "hybrid-ceramic",
+  "version": "0.0.1",
+  "description": "Landing markup",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Taras Bilous",
+  "license": "ISC",
+  "dependencies": {
+    "uglify-js": "^2.5.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-autoprefixer": "~3.0.0",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-cssmin": "~0.8.0",
+    "load-grunt-tasks": "~0.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
