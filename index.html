@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animate.min.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -96,11 +97,12 @@
                     <div class="btn-wrapper">
                         <a href="javascript:void(0)" class="btn btn-lg btn-primary btn-header-action my-btn-lg">ОСТАВИТЬ
                             ЗАЯВКУ</a>
+                        <span class="visible-xs-inline-block ion-ios-arrow-thin-left my-arrow my-animated visible passing left"></span>
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-7 hidden-xs">
                     <div class="btn-label">
-                        <span class="ion-ios-arrow-thin-left my-arrow"></span>
+                        <span class="ion-ios-arrow-thin-left my-arrow  my-animated visible passing left"></span>
                         <i class="btn-label-text">
                             Оставьте заявку на бесплатный расчет для вашего помещения у специалиста.
                         </i>
@@ -113,7 +115,7 @@
         </a>
     </div>
 </header>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" id="top-menu">
     <div class="container relative">
         <div class="row">
             <div class="navbar-header">
@@ -128,12 +130,12 @@
             <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li class="active"><a class="anchor" href="#fundamental">Принцип работы</a></li>
-                    <li><a class="anchor" href="#why">Почему мы?</a></li>
-                    <li><a class="anchor" href="#why">характеристики</a></li>
-                    <li><a class="anchor" href="#warning">наши работы</a></li>
-                    <li><a class="anchor" href="#videoreview">сертификаты</a></li>
-                    <li><a class="anchor" href="#feedback">отзывы</a></li>
-                    <li><a class="anchor" href="#warranty">контакты</a></li>
+                    <li><a class="" href="#why">Почему мы?</a></li>
+                    <li><a class="" href="#why">характеристики</a></li>
+                    <li><a class="" href="#warning">наши работы</a></li>
+                    <li><a class="" href="#videoreview">сертификаты</a></li>
+                    <li><a class="" href="#feedback">отзывы</a></li>
+                    <li><a class="" href="#warranty">контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -193,32 +195,114 @@
             <span class="line"></span>
         </span>
 
-        <h3 class="sub-header color-my-gray">
+        <h3 class="sub-header color-my-lightgray">
             “HYBRID - надежный Европейский стандарт альтернативного электроотопления.”
         </h3>
     </div>
     <div class="section-body">
         <div class="container">
             <div class="row">
-                <div class="col-sm-4 col-xs-6">
+                <div class="col-sm-6 col-md-6 col-lg-4">
                     <div class="why-item">
                         <div class="col-xs-3 text-center no-padding no-sm">
-                            <img src="img/icons/coffee.png" class="img-responsive">
+                            <img src="img/icons/coffee.png" class="img-responsive why-img" alt="тепло и уют">
                         </div>
                         <div class="col-xs-9  no-padding no-sm">
                             <h3 class="text-uppercase color-white">
                                 Тепло и уют
                             </h3>
 
-                            <p class="light">
+                            <p class="light why-text">
                                 HYBRID это технология двух принципов обогрева: конвекционный и инфракрасный. HYBRID
                                 подходит для отопления любых помещений.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 col-xs-6"></div>
-                <div class="col-sm-4 col-xs-6"></div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="why-item">
+                        <div class="col-xs-3 text-center no-padding no-sm">
+                            <img src="img/icons/palitra.png" class="img-responsive why-img" alt="дизайн и комфорт">
+                        </div>
+                        <div class="col-xs-9  no-padding no-sm">
+                            <h3 class="text-uppercase color-white">
+                                Дизайн и комфорт
+                            </h3>
+
+                            <p class="light why-text">
+                                HYBRID идеально вписывается в любой интерьер, даже самый изысканный. Панели HYBRID - это
+                                роскошная деталь любого интерьера.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="why-item">
+                        <div class="col-xs-3 text-center no-padding no-sm">
+                            <img src="img/icons/coffee.png" class="img-responsive  why-img" alt="безопасность">
+                        </div>
+                        <div class="col-xs-9  no-padding no-sm">
+                            <h3 class="text-uppercase color-white">
+                                безопасность
+                            </h3>
+
+                            <p class="light why-text">
+                                HYBRID - сертифицированы и рекомендованы для деских, дошкольных и лечебных учреждений.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="why-item">
+                        <div class="col-xs-3 text-center no-padding no-sm">
+                            <img src="img/icons/money.png" class="img-responsive  why-img" alt="экономичность">
+                        </div>
+                        <div class="col-xs-9  no-padding no-sm">
+                            <h3 class="text-uppercase color-white">
+                                Экономичность
+                            </h3>
+
+                            <p class="light why-text">
+                                Энергосберегающая технология HYBRID позволяет снизить мощность панели до 0.375 кВт.а
+                                терморегулятор позволит еще больше сэкономить.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="why-item">
+                        <div class="col-xs-3 text-center no-padding no-sm">
+                            <img src="img/icons/cup.png" class="img-responsive why-img"  alt="Высокое качество">
+                        </div>
+                        <div class="col-xs-9  no-padding no-sm">
+                            <h3 class="text-uppercase color-white">
+                                Высокое качество
+                            </h3>
+
+                            <p class="light why-text">
+                                Высокое качество, надежность и современные материалы которое позволяет соответствовать
+                                всем европейским стандартам.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-4">
+                    <div class="why-item">
+                        <div class="col-xs-3 text-center no-padding no-sm">
+                            <img src="img/icons/wrench.png" class="img-responsive why-img" alt="Легкая установка">
+                        </div>
+                        <div class="col-xs-9  no-padding no-sm">
+                            <h3 class="text-uppercase color-white">
+                                Легкая установка
+                            </h3>
+
+                            <p class="light why-text">
+                                Монтаж и установка HYBRID предельно просты и не требуют специальных инструментов и
+                                навыков.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

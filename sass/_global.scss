@@ -16,6 +16,7 @@
 $nav-bg: #e85122;
 $h-border-color: rgba(255, 255, 255, .3);
 $my-gray: #898989;
+$my-lightgray: #c3c3c3;
 
 body {
   position: relative;
@@ -91,6 +92,9 @@ i {
 .color-my-gray{
   color: $my-gray;
 }
+.color-my-lightgray{
+  color: $my-lightgray;
+}
 
 .btn-lg {
   font-size: 1.3em;
@@ -126,7 +130,7 @@ i {
   }
   .line {
     display: inline-block;
-    width: 2em;
+    width: 3em;
     height: 1px;
     background-color: $my-gray;
     vertical-align: middle;

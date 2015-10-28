@@ -1,0 +1,82 @@
+//MY ANIMATION
+
+
+@-webkit-keyframes passing {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+        transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+        transform: translateX(50%);
+    opacity: 0;
+  }
+}
+@keyframes passing {
+  0% {
+        transform: translateX(-50%);
+    opacity: 0;
+  }
+  50% {
+        transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+        transform: translateX(50%);
+    opacity: 0;
+  }
+}
+@-webkit-keyframes left-passing {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+@keyframes left-passing {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+}
+.passing {
+  &.my-animated {
+    animation: passing 2s linear infinite;
+  }
+  &.my-animated-hover:hover {
+    animation: passing 2s linear infinite;
+  }
+}
+.parent.my-animated-hover:hover > .passing {
+  animation: passing 2s linear infinite;
+}
+
+.passing.left {
+  &.my-animated {
+    animation: left-passing 2s linear infinite;
+  }
+  &.my-animated-hover:hover {
+    animation: left-passing 2s linear infinite;
+  }
+}
+.parent.my-animated-hover:hover > .passing {
+  animation: left-passing 2s linear infinite;
+}

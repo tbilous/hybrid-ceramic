@@ -122,6 +122,9 @@ $color-h5: #898989;
   margin: 18px auto 0;
 }
 .header-button-wrapper{
+  .col-lg-7{
+    padding-right: 5px;
+  }
   margin-top: 9em;
   @media screen and (max-width: $screen-sm-min) {
     margin-top: 2em;
@@ -130,6 +133,9 @@ $color-h5: #898989;
 .my-arrow{
   font-size: 3em;
   line-height: 0;
+  &.my-animated{
+    display: inline-block;
+  }
 }
 .btn-header-action{
   padding: 0;
@@ -141,6 +147,9 @@ $color-h5: #898989;
   text-align: right;
   @media screen and (max-width: $screen-sm-min) {
     text-align: center;
+  }
+  .my-animated{
+    vertical-align: middle;
   }
 }
 .btn-label{

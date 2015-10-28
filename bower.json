@@ -18,7 +18,6 @@
   "dependencies": {
     "bootstrap-sass": "~3.3.5",
     "lightbox2": "~2.8.1",
-    "font-awesome": "~4.4.0",
     "font-awesome-animation": "~0.0.7",
     "scrollMonitor": "~1.0.12",
     "animate.css": "~3.4.0",
