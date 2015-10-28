@@ -1,0 +1,146 @@
+//BLOCK 5 products //BLOCK 7 Carousel //BLOCK 8 Warning
+
+.products{
+  padding: 3em 0 2em;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  @media screen and (max-width: $screen-tablet) {
+    background-image: url("../img/prod-bg-lowres.jpg");
+  }
+  @media screen and (min-width: $screen-tablet) {
+    background-image: url("../img/prod-bg-hires.jpg");
+  }
+  .pr-item{
+    vertical-align: top;
+    display: inline-block;
+    position: relative;
+    max-width: 230px;
+    width: 100%;
+    margin: 3em 3%;
+    &.most-popular::before{
+      content: '';
+      position: absolute;
+      height: 43px;
+      top: -44px;
+      background: url("../img/most-popular.png") center no-repeat;
+      width: 100%;
+      left: 0;
+      background-size: contain;
+    }
+  }
+  .pr-item-header{
+    background-color: $white-8;
+    padding: 2em 0.5em 1em;
+    margin-bottom: 1px;
+    font-size: 2em;
+  }
+  .pr-item-body{
+    padding: 1em 0 2em;
+    background-color: $white-3;
+  }
+  .price{
+    font-size: 3em;
+  }
+  .price, .pr-item-photo{
+    margin-bottom: 2em;
+  }
+  .pr-item-photo{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 240px;
+    &.white-item{
+      background-image: url("../img/pr-white.png");
+    }
+    &.black-item{
+      background-image: url("../img/pr-black.png");
+    }
+    &.des-item{
+      background-image: url("../img/pr-des.png");
+    }
+  }
+  .ion{
+    margin-left: 5px;
+  }
+}
+.section-overview{
+  padding: 3em 0;
+  .overview-carousel{
+    .item{
+    }
+  }
+  .carousel-control{
+    &.left, &.right{
+      background-image: none;
+    }
+    .ion{
+      position: absolute;
+      font-size: 1em;
+      top: 50%;
+      margin-top: -.2em;
+      color: $my-gray;
+    }
+  }
+  .slide{
+    max-width: 850px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    &.first-slide{
+      background-image: url("../img/carousel/slide1.jpg");
+    }
+    &.second-slide{
+      background-image: url("../img/carousel/slide2.jpg");
+    }
+    &.third-slide{
+      background-image: url("../img/carousel/slide3.jpg");
+    }
+    &.fourth-slide{
+      background-image: url("../img/carousel/slide4.jpg");
+    }
+  .spacer{
+      padding-top: 53%;
+    }
+  }
+  .my-carousel-indicators{
+    text-align: center;
+    li{
+      cursor: pointer;
+      width: 6em;
+      padding: 3em 0;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      &.to-slide1{
+        background-image: url("../img/carousel/slide1mini.jpg");
+      }
+      &.to-slide2{
+        background-image: url("../img/carousel/slide2mini.jpg");
+      }
+      &.to-slide3{
+        background-image: url("../img/carousel/slide3mini.jpg");
+      }
+      &.to-slide4{
+        background-image: url("../img/carousel/slide4mini.jpg");
+      }
+    }
+  }
+}
+.section-warning{
+  padding: 3em 0 4em;
+  //background-image: url("../img/warning-bg-hires.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+/*  @media screen and (max-width: $screen-tablet) {
+    background-image: url("../img/warning-bg-lowres.jpg");
+  }*/
+  .sub-header{
+    margin-top: 1.5em;
+    &:nth-of-type(2){
+      max-width: 1000px;
+      margin: 1.5em auto 0;
+    }
+  }
+}

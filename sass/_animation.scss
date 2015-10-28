@@ -77,6 +77,9 @@
     animation: left-passing 2s linear infinite;
   }
 }
-.parent.my-animated-hover:hover > .passing {
+.parent.my-animated-hover:hover > .passing.left {
   animation: left-passing 2s linear infinite;
+}
+.parent.my-animated-hover:hover > .passing {
+  animation: passing 2s linear infinite;
 }

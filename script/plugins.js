@@ -23,7 +23,7 @@
 }());
 
 $(document).ready(function () {
-
+    jQuery(window).trigger('resize').trigger('scroll');
 //GALLERY THUMBS BG
 /*
     function thumbsBgA() {
