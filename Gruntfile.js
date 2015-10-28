@@ -30,7 +30,7 @@ module.exports = function (grunt) {
             options: {},
             minify: {
                 src: ['css/styles.css'],
-                dest: absolutePath('css/styles.min.css')
+                dest: absolutePath('css/styles.css')
             }
         },
 

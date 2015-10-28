@@ -1,6 +1,5 @@
-/* Webfont: Lato-Bold */
-//noinspection ALL
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,300italic&subset=latin,cyrillic');
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600&subset=cyrillic,latin);
 
 @font-face {
   font-family: 'MerriweatherItalic';
@@ -12,14 +11,6 @@
   url('../fonts/MerriweatherItalic.svg#MerriweatherItalic') format('svg');
 }
 
-//GLOBAL COLORS
-$nav-bg: #e85122;
-$white-3: rgba(255, 255, 255, .3);
-$white-8: rgba(255, 255, 255, .8);
-$my-gray: #898989;
-$my-lightgray: #c3c3c3;
-$my-black: #333333;
-$action-bg: #edb83e;
 
 body {
   position: relative;
@@ -81,6 +72,14 @@ i {
 .color-white {
   color: #ffffff;
 }
+//GLOBAL COLOR
+$nav-bg: #e85122;
+$white-3: rgba(255, 255, 255, .3);
+$white-8: rgba(255, 255, 255, .8);
+$my-gray: #898989;
+$my-lightgray: #c3c3c3;
+$my-black: #333333;
+$action-bg: #edb83e;
 
 .color-black {
   color: #000000;
@@ -343,3 +342,4 @@ i {
     opacity: 1;
   }
 }
+
