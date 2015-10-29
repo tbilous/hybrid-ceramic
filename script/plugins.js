@@ -23,7 +23,30 @@
 }());
 
 $(document).ready(function () {
+
     jQuery(window).trigger('resize').trigger('scroll');
+
+    //SCROLL TO ANCHOR
+    function scroll_if_anchor(href) {
+        href = typeof(href) == "string" ? href : $(this).attr("href");
+        var fromTop = 50;
+        if (href.indexOf("#") == 0) {
+            var $target = $(href);
+            if ($target.length) {
+                var time = 1000;
+                $('html, body').animate({scrollTop: $target.offset().top - fromTop}, time);
+                if (history && "pushState" in history) {
+                    history.pushState({}, document.title, window.location.pathname + href);
+                    return false;
+                }
+            }
+        }
+    }
+    // Intercept all anchor clicks
+    $("body").on("click", ".anchor", scroll_if_anchor);
+    $window = $(window);
+
+
 //GALLERY THUMBS BG
 /*
     function thumbsBgA() {
@@ -52,7 +75,7 @@ $(document).ready(function () {
             e.stopPropagation();
         });
     });*/
-//SPY MENU
+/*//SPY MENU
 // Cache selectors
     var lastId,
         topMenu = $("#top-menu"),
@@ -99,7 +122,7 @@ $(document).ready(function () {
                 .parent().removeClass("active")
                 .end().filter("[href=#" + id + "]").parent().addClass("active");
         }
-    });
+    });*/
 
 //Scroll MONITOR
 /*

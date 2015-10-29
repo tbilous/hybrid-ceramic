@@ -1,4 +1,4 @@
-//BLOCK 5 products //BLOCK 7 Carousel //BLOCK 8 Warning
+//BLOCK 5 products //BLOCK 7 Carousel //BLOCK 8 Warning //BLOCK 9 thermostat - nav-tabs
 
 .products{
   padding: 3em 0 2em;
@@ -141,6 +141,58 @@
     &:nth-of-type(2){
       max-width: 1000px;
       margin: 1.5em auto 0;
+    }
+  }
+}
+
+.section-thermostat{
+  padding: 3em 0 2em;
+  .nav-tabs{
+    text-align: center;
+
+    li{
+      a{
+        color: $my-black;
+        font-size: 1.1em;
+      }
+      &.active{
+        a{
+          color: $brand-danger;
+        }
+      }
+    }
+  }
+  .tab-content, .nav-wrapper{
+    margin-top: 2em;
+  }
+  .nav-tab-header, .nav-tab-body{
+    margin-bottom: 1.2em;
+  }
+  .nav-tab-header{
+    font-weight: 600;
+  }
+  .nav-tab-price{
+    font-size: 2.5em;
+    margin-bottom: .8em;
+  }
+  .nav-tab-img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &.nav-tab-img{
+      background-image: url("../img/nav/inset1.jpg");
+    }
+    &.socket{
+      background-image: url("../img/nav/inset2.jpg");
+    }
+    &.programmable{
+      background-image: url("../img/nav/inset3.jpg");
+    }
+    &.wireless{
+      background-image: url("../img/nav/inset4.jpg");
+    }
+    &.electronic{
+      background-image: url("../img/nav/inset5.jpg");
     }
   }
 }
