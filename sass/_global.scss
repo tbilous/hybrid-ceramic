@@ -36,6 +36,13 @@ body {
     }
   }
 }
+a, button, input, textarea {
+  &:focus,
+  &:active {
+    outline: none !important;
+  }
+}
+
 
 .btn-lg {
   font-size: $font-size-base;
@@ -343,3 +350,7 @@ $action-bg: #edb83e;
   }
 }
 
+//a thumbs
+.gallery-thumb{
+  display: block;
+}

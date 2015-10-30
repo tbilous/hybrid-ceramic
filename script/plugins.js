@@ -48,7 +48,6 @@ $(document).ready(function () {
 
 
 //GALLERY THUMBS BG
-/*
     function thumbsBgA() {
         $(".gallery-wrapper li a").each(function () {
             var imgID = this.href;
@@ -57,8 +56,16 @@ $(document).ready(function () {
     }
 
     window.onload = thumbsBgA;
-*/
 
+    function thumbsA() {
+        $(".gallery-thumb").each(function () {
+            var imgID = this.href;
+            console.log(imgID);
+            console.log('backgroundImage', 'url(' + imgID + ')');
+            $(this).css('backgroundImage', 'url(' + imgID + ')');
+        });
+    }
+    window.onload = thumbsA;
 //TREE FAQ
 /*
     $(function () {

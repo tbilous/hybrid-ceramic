@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/animate.min.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/ionicons.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 <body>
@@ -133,10 +133,10 @@
                     <li class="active"><a class="anchor" href="#fundamental">Принцип работы</a></li>
                     <li><a class="anchor" href="#why">Почему мы?</a></li>
                     <li><a class="anchor" href="#characters">характеристики</a></li>
-                    <li><a class="anchor" href="#">наши работы</a></li>
-                    <li><a class="anchor" href="#">сертификаты</a></li>
-                    <li><a class="anchor" href="#">отзывы</a></li>
-                    <li><a class="anchor" href="#">контакты</a></li>
+                    <li><a class="anchor" href="#portofolio">наши работы</a></li>
+                    <li><a class="anchor" href="#certificates">сертификаты</a></li>
+                    <li><a class="anchor" href="#feedback">отзывы</a></li>
+                    <li><a class="anchor" href="#footer">контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -706,6 +706,7 @@
         </span>
     </div>
 </section>
+<!--sass _portofolio-->
 <section class="section-portofolio" id="portofolio">
     <div class="section-header">
         <h2 class="color-primary">НАШИ РАБОТЫ</h2>
@@ -735,11 +736,30 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <div class="embed-responsive embed-responsive-4by3 gallery-unit">
+                        <a href="#" class="embed-responsive-item" data-lightbox="gallery"
+                           data-title="Двери-купе фотопечать: 7500 грн." style="background-color: gray"></a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="embed-responsive embed-responsive-4by3 gallery-unit">
+                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="embed-responsive embed-responsive-4by3 gallery-unit">
+                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
 </section>
-<section class="section-certificates" id="certificates">
+<section class="section-certificates parallax-window" data-parallax="scroll" data-image-src="img/cerificates-bg.jpg"
+         id="certificates">
     <div class="section-header">
         <h2 class="color-primary">Сертификаты</h2>
         <span class="line-header">
@@ -748,7 +768,142 @@
             <span class="line"></span>
         </span>
     </div>
+    <div class="section-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate1.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate2.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate3.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate4.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate5.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2">
+                    <a class="gallery-thumb certificate" href="img/certificates/certificate6.jpg"
+                       data-lightbox="gallery">
+                        <div class="spacer"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<section class="section-feedback" id="feedback">
+    <div class="section-header">
+        <h2 class="color-primary">Отзывы клиентов</h2>
+        <span class="line-header">
+            <span class="line"></span>
+            <span class="ion-flash" style=""></span>
+            <span class="line"></span>
+        </span>
+    </div>
+    <div class="section-body">
+        <div class="container">
+            <ul class="feedback-list list-unstyled">
+                <li class="feedback-unit">
+                    <p>
+                        "Очень рад покупкой, на свои 375Вт мощности обогревает довольно приличную площадь. Не нагружает
+                        сеть. Покупал их как альтернативный вариант дорожающему газовому отоплению. Поставил 2 панели на
+                        2-х
+                        комнатную квартиру. До 0 градусов на улице в квартире 22 градуса, газовый котел не включаю."
+                    </p>
+
+                    <p class="author">
+                        Ярослав, г. Киев
+                    </p>
+                </li>
+                <li class="feedback-unit">
+                    <p>
+                        "Я купил 6 шт. HYBRID 4 года назад на квартиру 65м2 и 4 датчика в январе-феврале при морозах
+                        20-22
+                        вышло 700 кВт со светом и бойлером очень доволен Посоветовал друзьям из Ужгорода они купили в
+                        прошлом году при их климате супер-экономно."
+                    </p>
+
+                    <p class="author">
+                        Олег, г. Одесса
+                    </p>
+                </li>
+                <li class="feedback-unit">
+                    <p>
+                        "У меня свой магазин стройматериалов. Отрезался от центрального отопления уже давно, все равно
+                        не
+                        греет. Обогревались масляными батареями. Перешли на керамические панели. Поставили
+                        программаторы.
+                        Вложения за один раз достаточные, но все равно, дешевле, чем газовое отопление и удобнее чем
+                        угольное."
+                    </p>
+
+                    <p class="author">
+                        Егор, г. Хмельницкий
+                    </p>
+                </li>
+            </ul>
+            <form class="form-feedback text-center">
+                <h3 class="header-form">Появились вопросы?</h3>
+
+                <p class="form-sub-header">
+                    Спрашивайте мы ответим
+                </p>
+
+                <div class="inner-addon left-addon">
+                    <i class="form-control-feedback ion ion-person"></i>
+                    <input required name="name" type="text" class="form-control" placeholder="Введите имя"/>
+                </div>
+                <div class="inner-addon left-addon">
+                    <i class="form-control-feedback ion ion-ios-telephone"></i>
+                    <input required name="phone" type="text" class="form-control" placeholder="Введите телефон"/>
+                </div>
+                <div class="inner-addon left-addon">
+                    <i class="form-control-feedback ion ion-email"></i>
+                    <input required name="email" type="text" class="form-control" placeholder="Введите Email"/>
+                </div>
+                <div class="inner-addon left-addon">
+                    <i class="form-control-feedback ion ion-android-textsms"></i>
+                    <textarea required rows="4" class="form-control" placeholder="Введите вопрос"></textarea>
+                </div>
+                <input type="submit" class="btn btn-danger btn-lg" value="ЗАДАТЬ ВОПРОС"/>
+
+                <div class="form-contact">
+                    <h5 class="bold color-my-black text-center">Или звоните нам по телефонам:</h5>
+                    <ul class="list-unstyled">
+                        <li>(073) 467-00-75</li>
+                        <li>(097) 897-50-59</li>
+                        <li>(050) 611-23-97</li>
+                    </ul>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</section>
+<!--end _portofolio-->
+<footer class="footer">
+
+</footer>
 <!-- Add your site or application content here -->
 <p>Hello world! This is HTML5 Boilerplate.</p>
 
@@ -757,10 +912,10 @@
 </footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+<script src="js/vendor/lightbox-plus-jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/parallax.min.js"></script>
 <script src="js/plugins.min.js"></script>
-<script src="js/main.js"></script>
 <script type="text/javascript">
     $('#tabs').tab();
 </script>
@@ -768,6 +923,15 @@
     $('#overviewCarousel').carousel({
         interval: 10000
     });
+</script>
+<script>
+    lightbox.option({
+        positionFromTop: 10,
+        wrapAround: true,
+        showImageNumberLabel: false,
+        maxHeight: 600,
+        resizeDuration: 600
+    })
 </script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <!--        <script>

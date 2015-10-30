@@ -6,7 +6,7 @@ function absolutePath(file) {
 module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt);
-
+    grunt.loadNpmTasks('grunt-uncss');
 
     grunt.initConfig({
 
@@ -34,6 +34,15 @@ module.exports = function (grunt) {
                 dest: absolutePath('css/styles.css')
             }
         },
+        uncss: {
+            dist: {
+                src: ['index.html'],
+                dest: 'css/ionicons.css',
+                options: {
+                    report: 'min' // optional: include to report savings
+                }
+            }
+        },
 
         watch: {
             css: {
@@ -46,7 +55,7 @@ module.exports = function (grunt) {
 
 
     // register task
-    grunt.registerTask('default', ['autoprefixer', 'cssmin']);
+    grunt.registerTask('default', ['uncss', 'autoprefixer', 'cssmin']);
     grunt.registerTask('dev', ['watch']);
 
 };

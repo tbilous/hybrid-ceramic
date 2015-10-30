@@ -23,7 +23,6 @@ on_stylesheet_saved do |file|
         map:   File.read(map),
         from: file,
         to:   file})
-
     result.map
   else
     File.open(file, 'w') { |io| io << AutoprefixerRails.process(css) }
