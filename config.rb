@@ -19,12 +19,12 @@ on_stylesheet_saved do |file|
   map = file + '.map'
 
   if File.exists? map
-    result = AutoprefixerRails.process(css,
-      from: file,
-      to:   file,
-      map:  { prev: File.read(map), inline: false })
-    File.open(file, 'w') { |io| io << result.css }
-    File.open(map,  'w') { |io| io << result.map }
+    result = AutoprefixerRails.process(css, {
+        map:   File.read(map),
+        from: file,
+        to:   file})
+
+    result.map
   else
     File.open(file, 'w') { |io| io << AutoprefixerRails.process(css) }
   end
