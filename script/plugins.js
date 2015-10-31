@@ -60,79 +60,12 @@ $(document).ready(function () {
     function thumbsA() {
         $(".gallery-thumb").each(function () {
             var imgID = this.href;
-            console.log(imgID);
-            console.log('backgroundImage', 'url(' + imgID + ')');
             $(this).css('backgroundImage', 'url(' + imgID + ')');
         });
     }
     window.onload = thumbsA;
-//TREE FAQ
-/*
-    $(function () {
-        $('.tree li:has(ul)').addClass('parent_li well tree-patent-well').find(' > span').attr('title', 'Collapse this branch');
-        $('.tree li.parent_li > span').on('click', function (e) {
-            var children = $(this).parent('li.parent_li').find(' > ul > li');
-            if (children.is(":visible")) {
-                children.hide('fast');
-                $(this).attr('title', 'Expand this branch').find(' > i').addClass("fa-plus").removeClass('fa-minus');
-            } else {
-                children.show('fast');
-                $(this).attr('title', 'Collapse this branch').find(' > i').addClass('fa-minus').removeClass("fa-plus");
-            }
-            e.stopPropagation();
-        });
-    });*/
-/*//SPY MENU
-// Cache selectors
-    var lastId,
-        topMenu = $("#top-menu"),
-        topMenuHeight = topMenu.outerHeight() + 15,
-    // All list items
-        menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
-        scrollItems = menuItems.map(function () {
-            var item = $($(this).attr("href"));
-            if (item.length) {
-                return item;
-            }
-        });
-
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
-    menuItems.click(function (e) {
-        var href = $(this).attr("href"),
-            offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
-        $('html, body').stop().animate({
-            scrollTop: offsetTop
-        }, 300);
-        e.preventDefault();
-    });
-
-// Bind to scroll
-    $(window).scroll(function () {
-        // Get container scroll position
-        var fromTop = $(this).scrollTop() + topMenuHeight;
-
-        // Get id of current scroll item
-        var cur = scrollItems.map(function () {
-            if ($(this).offset().top < fromTop)
-                return this;
-        });
-        // Get the id of the current element
-        cur = cur[cur.length - 1];
-        var id = cur && cur.length ? cur[0].id : "";
-
-        if (lastId !== id) {
-            lastId = id;
-            // Set/remove active class
-            menuItems
-                .parent().removeClass("active")
-                .end().filter("[href=#" + id + "]").parent().addClass("active");
-        }
-    });*/
 
 //Scroll MONITOR
-/*
     $('.s-monitor').each(function (i, element) {
 
         var offsetTop = $(this).data('top');
@@ -150,24 +83,88 @@ $(document).ready(function () {
             $(element).removeClass(action)
         });
     });
-*/
 
 //COUNTER
-/*
-    var tomorrow = moment().endOf('day').valueOf() + 1;
-    var now = moment().valueOf();
-    var interval = (tomorrow - now) / 1000;
-    var clock = $('#top-clock').FlipClock(interval, {
-        clockFace: 'HourlyCounter',
-        countdown: true,
-        language: 'ru'
-    });
-    var clock = $('#middle-clock').FlipClock(interval, {
-        clockFace: 'HourlyCounter',
-        countdown: true,
-        language: 'ru'
-    });
-*/
+    var date = new Date();
+    date.setDate(date.getDate() + 1);
+    $(".daynow").text(date.getDate());
+    var month = date.getMonth();
+    switch(month) {
+        case 0:
+        {
+            $(".monthnow").text(' января');
+            break;
+        }
+        case 1:
+        {
+            $(".monthnow").text(' февраля');
+            break;
+        }
+        case 2:
+        {
+            $(".monthnow").text(' марта');
+            break;
+        }
+        case 3:
+        {
+            $(".monthnow").text(' апреля');
+            break;
+        }
+        case 4:
+        {
+            $(".monthnow").text(' мая');
+            break;
+        }
+        case 5:
+        {
+            $(".monthnow").text(' июня');
+            break;
+        }
+        case 6:
+        {
+            $(".monthnow").text(' июля');
+            break;
+        }
+        case 7:
+        {
+            $(".monthnow").text(' августа');
+            break;
+        }
+        case 8:
+        {
+            $(".monthnow").text(' сентября');
+            break;
+        }
+        case 9:
+        {
+            $(".monthnow").text(' октября');
+            break;
+        }
+        case 10:
+        {
+            $(".monthnow").text(' ноября');
+            break;
+        }
+        case 11:
+        {
+            $(".monthnow").text(' декабря');
+            break;
+        }
+    }
+
+    dateEnd = date;
+    //console.log(dateEnd);
+
+    /*
+        var tomorrow = moment().endOf('day').valueOf() + 1;
+        var now = moment().valueOf();
+        var interval = (tomorrow - now) / 1000;
+        var clock = $('#top-clock').FlipClock(interval, {
+            clockFace: 'HourlyCounter',
+            countdown: true,
+            language: 'ru'
+        });
+    */
 
 //CENTERED MODAL
     $(".start-modal").click(function () {
@@ -191,14 +188,16 @@ $(document).ready(function () {
             alert('отработала' + ' - ' + formID);
             $('#' + formID).trigger("reset");
         });
-        if ($('#orderModal').hasClass('in')) {
-            $('#orderModal').modal('hide');
+        //console.log($(this));
+        var parent = $(this).parents('.modal');
+        var modalID = parent.attr("id");
+
+        if ($('#' + modalID).hasClass('in')) {
+            $('#' + modalID).modal('hide');
             return false;
         } else {
             return false;
         }
     });
-
-
 
 });

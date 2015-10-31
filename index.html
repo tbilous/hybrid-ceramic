@@ -411,7 +411,7 @@
                 </div>
             </div>
             <div class="col-md-8 col-lg-8">
-                <h2>С <span>12 октября</span> панели <span class="bold">HYBRID</span> подорожают на 20%
+                <h2>С <span><span class="daynow"></span><span class="monthnow"></span></span> панели <span class="bold">HYBRID</span> подорожают на 20%
                     Успейте купить по выгодной цене!
                 </h2>
             </div>
@@ -1006,7 +1006,7 @@
                     </p>
                 </li>
             </ul>
-            <form class="form-feedback text-center">
+            <form class="form-feedback text-center" id="queryForm">
                 <h3 class="header-form">Появились вопросы?</h3>
 
                 <p class="form-sub-header">
@@ -1027,7 +1027,7 @@
                 </div>
                 <div class="inner-addon left-addon">
                     <i class="form-control-feedback ion ion-android-textsms"></i>
-                    <textarea required rows="4" class="form-control" placeholder="Введите вопрос"></textarea>
+                    <textarea required name="query" rows="4" class="form-control" placeholder="Введите вопрос"></textarea>
                 </div>
                 <input type="submit" class="btn btn-danger btn-lg" value="ЗАДАТЬ ВОПРОС"/>
 
@@ -1131,6 +1131,8 @@
 <script src="js/vendor/lightbox-plus-jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/parallax.min.js"></script>
+<script src="js/vendor/moment.min.js"></script>
+<script src="js/scrollMonitor.min.js"></script>
 <script src="js/plugins.min.js"></script>
 
 <script type="text/javascript">

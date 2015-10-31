@@ -12,13 +12,22 @@ module.exports = function (grunt) {
 
         pkg: grunt.file.readJSON('package.json'),
 
+        uncss: {
+            dist: {
+                src: ['index.html'],
+                dest: 'css/ionicons.css',
+                options: {
+                    report: 'min' // optional: include to report savings
+                }
+            }
+        },
+
         autoprefixer: { // https://github.com/nDmitry/grunt-autoprefixer
             options: {
                 browsers: ['> 1%', 'bb 10', 'ie 8', 'ie 9'],
                 remove: true,
                  map: {
-                 inline: false,
-                     
+                 inline: false
                  }
             },
             no_dest: {
@@ -32,15 +41,6 @@ module.exports = function (grunt) {
             minify: {
                 src: ['css/styles.css'],
                 dest: absolutePath('css/styles.css')
-            }
-        },
-        uncss: {
-            dist: {
-                src: ['index.html'],
-                dest: 'css/ionicons.css',
-                options: {
-                    report: 'min' // optional: include to report savings
-                }
             }
         },
 
