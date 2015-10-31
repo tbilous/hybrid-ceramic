@@ -68,19 +68,38 @@ $(document).ready(function () {
 //Scroll MONITOR
     $('.s-monitor').each(function (i, element) {
 
-        var offsetTop = $(this).data('top');
-        var offsetBottom = $(this).data('bottom');
+        //var offsetTop = $(this).data('top');
+        //var offsetBottom = $(this).data('bottom');
+        if ($(element).get(0).hasAttribute("data-bottom")){
+           var offsetBottom = $(this).data('bottom');
+        }
+        else{
+           var offsetBottom = 200
+        }
+        if ($(element).get(0).hasAttribute("data-top")){
+            var offsetTop = $(this).data('top')
+        }
+        else{
+            var offsetTop = 200
+        }
         var watcher = scrollMonitor.create(element, {top: offsetTop, bottom: offsetBottom});
         var action = $(this).data('animated');
+        var delay = $(this).data('delay');
+        //console.log(delay.length);
         //watcher.lock();
 
         watcher.enterViewport(function () {
             //console.log(this + ' ' + action + ' ' + 'I have entered the viewport');
-            $(element).addClass(action)
+            if ($(element).get(0).hasAttribute("data-delay")){
+                $(element).css('animation-delay', delay + 's')
+            }
+            $(element).addClass(action);
+            watcher.destroy
         });
         watcher.exitViewport(function () {
             //console.log(this + ' ' + action + ' ' + 'I have left the viewport');
-            $(element).removeClass(action)
+            $(element).removeClass(action);
+            watcher.destroy
         });
     });
 
