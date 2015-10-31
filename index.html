@@ -17,7 +17,7 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 <!--sass _header-->
-<header class="header">
+<header class="header" id="header">
     <div class="header-top-block">
         <div class="container">
             <div class="row">
@@ -705,6 +705,125 @@
             <span class="line"></span>
         </span>
     </div>
+    <div class="container">
+        <div class="section-body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>* Расчет на отопление 50 кв.м.</th>
+                    <th>Керамические панели Hybrid
+                        <span class="text-nowrap">(6 шт. 375Вт)</span>
+                    </th>
+                    <th>
+                        Газовое отопление
+                    </th>
+                    <th>
+                        Электроконвекторы
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="blanc">
+                    <td><div class="blanc-spacer"></div></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Стоимость оборудования</td>
+                    <td>7140 грн.</td>
+                    <td>50- 100 тыс.  грн.</td>
+                    <td>4260 грн.</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Тарифы</td>
+                    <td>0.4084грн./кВт*час(до 150 кВт) 0.6094грн./кВт*час (150-800кВт) 1.3404 грн./кВт*час(свыше 800кВт)</td>
+                    <td>7,188 рн./ куб.м. (с 200 куб.м.)</td>
+                    <td>0.4084грн./кВт*час(до 150 кВт) 0.6094грн./кВт*час (150-800 кВт) 1.3404 грн./кВт*час(свыше 800кВт)</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Среднемесячное потребление</td>
+                    <td>2,25кВт * 10часов * 30 дней = 539кВт</td>
+                    <td>300 куб. м.</td>
+                    <td>5 кВт * 10 часов * 30 дней = 1500кВт</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Затраты на отопление в месяц</td>
+                    <td>539 грн.</td>
+                    <td>2130 грн.</td>
+                    <td>1560 грн.</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Дизайн и компактность</td>
+                    <td>Толщина 12 мм, отличное решение для любого интерьера, имеет различные цветовые решения</td>
+                    <td>Нужно отдельное помещение под котел плюс трубы</td>
+                    <td>Сложно применять в дизайне, подходит только для стиля хайтек</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Экологичность и безопасность</td>
+                    <td>Полезен для здоровья, не сушит воздух, не поднимает пыль. Полезное тепло камня - стоун терапия</td>
+                    <td>Эксплуатация сопряжена с рисками</td>
+                    <td>Сжигает кислород, сушит воздух, поднимает пыль</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Гарантия и эксплуатация</td>
+                    <td>5 лет, 30 лет</td>
+                    <td>1 год, 15 лет</td>
+                    <td>1 год, 15 лет</td>
+                </tr>
+                <tr class="blanc">
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr style="border-bottom: 1px solid white;">
+                    <td>Надежность и долговечность</td>
+                    <td>Не чувствителен к перепадам напряжения до 380 Вольт Единственнй обогреватель не теряющий внешнего вида на протяжении 10-летий</td>
+                    <td>Требует защиты от перепада напряжения</td>
+                    <td>Требует защиты от перепада напряжения</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
 </section>
 <!--sass _portofolio-->
 <section class="section-portofolio" id="portofolio">
@@ -727,12 +846,14 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="embed-responsive embed-responsive-4by3 gallery-unit">
-                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                        <a href="#" class="embed-responsive-item" data-lightbox="gallery"
+                           data-title="Двери-купе фотопечать: 7500 грн." style="background-color: gray"></a>
                     </div>
                 </div>
                 <div class="col-xs-4">
                     <div class="embed-responsive embed-responsive-4by3 gallery-unit">
-                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                        <a href="#" class="embed-responsive-item" data-lightbox="gallery"
+                           data-title="Двери-купе фотопечать: 7500 грн." style="background-color: gray"></a>
                     </div>
                 </div>
             </div>
@@ -745,12 +866,14 @@
                 </div>
                 <div class="col-xs-4">
                     <div class="embed-responsive embed-responsive-4by3 gallery-unit">
-                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                        <a href="#" class="embed-responsive-item" data-lightbox="gallery"
+                           data-title="Двери-купе фотопечать: 7500 грн." style="background-color: gray"></a>
                     </div>
                 </div>
                 <div class="col-xs-4">
                     <div class="embed-responsive embed-responsive-4by3 gallery-unit">
-                        <a class="embed-responsive-item" style="background-color: gray"></a>
+                        <a href="#" class="embed-responsive-item" data-lightbox="gallery"
+                           data-title="Двери-купе фотопечать: 7500 грн." style="background-color: gray"></a>
                     </div>
                 </div>
             </div>
@@ -900,30 +1023,74 @@
         </div>
     </div>
 </section>
-<!--end _portofolio-->
-<footer class="footer">
+<!--end sass _portofolio-->
+<!--sass _footer-->
+<footer class="footer" id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4 hidden-xs">
+                <ul class="logo list-unstyled list-inline">
+                    <li class="logo-img">
+
+                    </li>
+
+                    <li class="logo-txt color-white text-uppercase">
+                        <div class="logo-line-top">
+                            Интернет-магазин экономного
+                        </div>
+                        <div class="logo-line-bottom">
+                            электроотопления в Украине
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-sm-4 text-center">
+                <a class="anchor btn btn-up" href="#header">
+                    <span class="ion-ios-arrow-up my-arrow"></span>
+                </a>
+                <ul class="list-unstyled worktime color-my-gray">
+                    <li>ГРАФИК РАБОТЫ:</li>
+                    <li>ПН-ВС</li>
+                    <li>С 7:00 ДО 22:00</li>
+                </ul>
+                <span class="text-uppercase color-my-gray light">&copy; 2015 All rights reserved</span>
+
+            </div>
+            <div class="col-sm-4 hidden-xs">
+                <div class="pay-metod">
+                <span class="color-white light pay-metod-text">
+                    Вы можете оплатить покупки наличными при получении, либо выбрать другой способ оплаты:
+                </span>
+                    <ul class="list-inline">
+                        <li><img src="img/visa.jpg" alt="visa" class="img-responsive"></li>
+                        <li><img src="img/mcard.jpg" alt="mastercard" class="img-responsive"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </footer>
-<!-- Add your site or application content here -->
-<p>Hello world! This is HTML5 Boilerplate.</p>
+<!--end sass _footer-->
 
-<footer class="gooter" id="footer">
-
-</footer>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
 <script src="js/vendor/lightbox-plus-jquery.min.js"></script>
 <script src="js/vendor/bootstrap.min.js"></script>
 <script src="js/vendor/parallax.min.js"></script>
 <script src="js/plugins.min.js"></script>
+
 <script type="text/javascript">
     $('#tabs').tab();
 </script>
+
 <script>
     $('#overviewCarousel').carousel({
         interval: 10000
     });
 </script>
+
 <script>
     lightbox.option({
         positionFromTop: 10,

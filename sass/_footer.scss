@@ -1,0 +1,33 @@
+//FOOTER
+
+.footer{
+  background: $my-black;
+  padding: 1em 0 3em;
+  .logo{
+    margin-top: 4.2em;
+  }
+  .btn-up{
+    background-color: $white-8;
+    border-radius: 100%;
+    display: inline-block;
+    width: 3.8em;
+    height: 3.8em;
+
+    padding: .8em;
+    .my-arrow{
+      font-size: 2em;
+    }
+  }
+  .worktime{
+    margin: 2em 0 2em;
+  }
+  .pay-metod{
+    max-width: 300px;
+    margin-top: 5em;
+    text-transform: uppercase;
+  }
+  .pay-metod-text{
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+}

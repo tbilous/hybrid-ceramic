@@ -25,6 +25,7 @@
 }
 
 .section-feedback {
+  background: url("../img/feedback-bg.jpg");
   $color-feedback: #555555;
   .feedback-list {
     padding-left: 15%;
@@ -52,21 +53,22 @@
     }
     &:nth-child(1) {
       &::before {
-        background: url("../img/ava1.jpg") no-repeat center;
+        background: url("../img/ava1.png") no-repeat center;
       }
     }
     &:nth-child(2) {
       &::before {
-        background: url("../img/ava2.jpg") no-repeat center;
+        background: url("../img/ava2.png") no-repeat center;
       }
     }
     &:nth-child(3) {
       &::before {
-        background: url("../img/ava3.jpg") no-repeat center;
+        background: url("../img/ava3.png") no-repeat center;
       }
     }
   }
   .form-feedback {
+    background-color: transparent;
     .header-form, .form-sub-header {
       text-align: center;
     }

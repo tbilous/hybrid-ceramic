@@ -1,0 +1,129 @@
+//BLOCK SIMILE TABLE
+.section-simile {
+  padding: 3em 0;
+  background-attachment: fixed;
+  background-size: cover;
+  @media screen and (max-width: $screen-tablet) {
+    background-image: url("../img/simile-bg-lowres.jpg");
+  }
+  @media screen and (min-width: $screen-tablet) {
+    background-image: url("../img/simile-bg-hires.jpg");
+  }
+  .section-header{
+    max-width: 730px;
+    margin: 0 auto;
+  }
+  .section-body{
+    margin-top: 2em;
+  }
+  .table {
+    border-collapse: separate;
+    //Table header
+    td, th{
+      width: 25%;
+    }
+    @media screen and (max-width: $screen-tablet) {
+      td, th{
+        width: auto;
+      }
+    }
+    thead {
+      tr {
+        th {
+          border-color: transparent;
+          background-color: white;
+          vertical-align: top;
+          font-weight: 600;
+          text-align: center;
+        }
+        th:nth-of-type(1) {
+          background-color: transparent;
+          color: white;
+        }
+        th:nth-of-type(2) {
+          border-bottom-left-radius: $border-radius-base;
+          border-top-left-radius: $border-radius-base;
+          @media screen and (max-width: $screen-tablet) {
+            border-bottom-left-radius: $border-radius-small;
+            border-top-left-radius: $border-radius-small;
+          }
+        }
+        th:nth-last-of-type(1) {
+          border-bottom-right-radius: $border-radius-base;
+          border-top-right-radius: $border-radius-base;
+          @media screen and (max-width: $screen-tablet) {
+            border-bottom-right-radius: $border-radius-small;
+            border-top-right-radius: $border-radius-small;
+          }
+        }
+      }
+    }
+    tbody {
+      .blanc-spacer {
+        padding: 1em;
+      }
+      tr:nth-of-type(odd) {
+        &.blanc {
+          border: none;
+          td {
+            color: transparent;
+            border: none;
+          }
+          td {
+            background-color: transparent;
+            &:nth-last-of-type(1) {
+              border-right: none;
+            }
+          }
+          td:first-child {
+            border-top-left-radius: 0;
+          }
+          td:last-child {
+            border-top-right-radius: 0;
+            border-right: none;
+          }
+          td:first-child {
+            border-bottom-left-radius: 0;
+          }
+          td:last-child {
+            border-bottom-right-radius: 0;
+          }
+        }
+      }
+
+      tr {
+        color: white;
+        td{
+          border-top: 1px solid white;
+          border-bottom: 1px solid white;
+          font-weight: 300;
+          text-align: center;
+        }
+        td:nth-of-type(1) {
+          background-color: $white-8;
+          color: $my-black;
+          font-weight: 600;
+          text-align: left;
+        }
+        td:nth-of-type(2) {
+          background-color: $white-3;
+        }
+        td:first-child {
+          border-top-left-radius: $border-radius-base;
+        }
+        td:last-child {
+          border-top-right-radius: $border-radius-base;
+          border-right: 1px solid white
+        }
+        td:first-child {
+          border-bottom-left-radius: $border-radius-base;
+        }
+        td:last-child {
+          border-bottom-right-radius: $border-radius-base;
+        }
+      }
+    }
+  }
+
+}
+
