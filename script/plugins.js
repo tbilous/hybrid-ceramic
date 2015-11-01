@@ -174,16 +174,14 @@ $(document).ready(function () {
     dateEnd = date;
     //console.log(dateEnd);
 
-    /*
         var tomorrow = moment().endOf('day').valueOf() + 1;
         var now = moment().valueOf();
         var interval = (tomorrow - now) / 1000;
-        var clock = $('#top-clock').FlipClock(interval, {
+        var clock = $('.clock').FlipClock(interval, {
             clockFace: 'HourlyCounter',
             countdown: true,
             language: 'ru'
         });
-    */
 
 //CENTERED MODAL
     $(".start-modal").click(function () {
