@@ -10,18 +10,18 @@
 .section-portofolio {
   .gallery-unit {
     margin-bottom: 2em;
-    a{
+    a {
       //position: relative;
       background-size: cover;
       &:hover,
       &:active,
-      &:focus{
+      &:focus {
         text-decoration: none;
       }
       box-shadow: inset 0 0 0 1px lightgray;
     }
   }
-  .gallery-unit-title{
+  .gallery-unit-title {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -32,8 +32,16 @@
     font-size: 1.5em;
     padding: 20% 1em 1em;
     background-color: $a-fade;
-    strong{
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+    strong {
       font-size: 120%;
+    }
+
+    &:hover {
+      opacity: 1;
     }
   }
 }
@@ -156,7 +164,7 @@
   }
   .form-contact {
     margin-top: 2em;
-    li{
+    li {
       font-size: 2em
     }
 
