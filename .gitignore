@@ -8,6 +8,7 @@ addons
 bower_components
 node_modules
 .sass-cache
-css/*.css
 css/styles.css.map
 js/plugins.min.js
+css/ionicons.css
+css/styles.css

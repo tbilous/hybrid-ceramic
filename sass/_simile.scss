@@ -1,5 +1,8 @@
 //BLOCK SIMILE TABLE
 .section-simile {
+  @media screen and (max-width: 650px)  {
+    display: none;
+  }
   padding: 3em 0;
   background-attachment: fixed;
   background-size: cover;

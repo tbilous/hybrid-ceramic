@@ -14,17 +14,17 @@ sourcemap     = true
 sass_options  = { cache: false }
 line_comments = false
 
-on_stylesheet_saved do |file|
-  css = File.read(file)
-  map = file + '.map'
+#on_stylesheet_saved do |file|
+ # css = File.read(file)
+ # map = file + '.map'
 
-  if File.exists? map
-    result = AutoprefixerRails.process(css, {
-        map:   File.read(map),
-        from: file,
-        to:   file})
-    result.map
-  else
-    File.open(file, 'w') { |io| io << AutoprefixerRails.process(css) }
-  end
-end
+#  if File.exists? map
+ #   result = AutoprefixerRails.process(css, {
+ #       map:   File.read(map),
+ #       from: file,
+ #       to:   file})
+ #   result.map
+ # else
+#    File.open(file, 'w') { |io| io << AutoprefixerRails.process(css) }
+ # end
+#end

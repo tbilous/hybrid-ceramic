@@ -220,7 +220,7 @@ $(document).ready(function () {
             data: $(this).serialize()
         }).done(function () {
             $(this).find("input").val("");
-            alert('отработала' + ' - ' + formID);
+            //alert('отработала' + ' - ' + formID);
             $('#' + formID).trigger("reset");
         });
         //console.log($(this));

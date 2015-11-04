@@ -15,7 +15,7 @@ module.exports = function (grunt) {
         uncss: {
             dist: {
                 src: ['index.html'],
-                dest: 'css/ionicons.css',
+                dest: 'css/ionicons.min.css',
                 options: {
                     report: 'min' // optional: include to report savings
                 }
@@ -35,15 +35,13 @@ module.exports = function (grunt) {
             }
 
         },
-
         cssmin: {
             options: {},
             minify: {
                 src: ['css/styles.css'],
-                dest: absolutePath('css/styles.css')
+                dest: absolutePath('css/styles.min.css')
             }
         },
-
         watch: {
             css: {
                 files: ['css/styles.css'],
@@ -55,7 +53,9 @@ module.exports = function (grunt) {
 
 
     // register task
-    grunt.registerTask('default', ['uncss', 'autoprefixer', 'cssmin']);
+    grunt.registerTask('default', [ 'autoprefixer', 'cssmin']);
+    grunt.registerTask('clear', 'uncss');
     grunt.registerTask('dev', ['watch']);
 
 };
+//<link rel="stylesheet" href="css/animate.min.css">
