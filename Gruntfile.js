@@ -17,7 +17,26 @@ module.exports = function (grunt) {
                 src: ['index.html'],
                 dest: 'css/ionicons.min.css',
                 options: {
-                    report: 'min' // optional: include to report savings
+                    report: 'min', // optional: include to report savings
+                    ignore:  [/\w\.in/,
+                        ".fade",
+                        ".collapse",
+                        ".collapsing",
+                        /(#|\.)navbar(\-[a-zA-Z]+)?/,
+                        /(#|\.)dropdown(\-[a-zA-Z]+)?/,
+                        /(#|\.)(open)/,
+                        ".modal",
+                        ".modal.fade.in",
+                        ".modal-dialog",
+                        ".modal-document",
+                        ".modal-scrollbar-measure",
+                        ".modal-backdrop.fade",
+                        ".modal-backdrop.in",
+                        ".modal.fade.modal-dialog",
+                        ".modal.in.modal-dialog",
+                        ".modal-open",
+                        ".in",
+                        ".modal-backdrop"]
                 }
             }
         },
