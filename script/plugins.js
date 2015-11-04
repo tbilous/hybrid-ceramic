@@ -42,6 +42,7 @@ $(document).ready(function () {
             }
         }
     }
+
     // Intercept all anchor clicks
     $("body").on("click", ".anchor", scroll_if_anchor);
     $window = $(window);
@@ -63,23 +64,40 @@ $(document).ready(function () {
             $(this).css('backgroundImage', 'url(' + imgID + ')');
         });
     }
-    window.onload = thumbsA;
+
+    //window.onload = thumbsA;
+
+    //GALLERY THUMBS BG
+    function thumbsBg() {
+        $(".gallery-unit a").each(function () {
+            var imgID = this.href;
+            $(this).css('backgroundImage', 'url(' + imgID + ')');
+        });
+    }
+
+    //window.onload = thumbsBg;
+
+    function onloadStart() {
+        thumbsA();
+        thumbsBg();
+    }
+    window.onload = onloadStart;
 
 //Scroll MONITOR
     $('.s-monitor').each(function (i, element) {
 
         //var offsetTop = $(this).data('top');
         //var offsetBottom = $(this).data('bottom');
-        if ($(element).get(0).hasAttribute("data-bottom")){
-           var offsetBottom = $(this).data('bottom');
+        if ($(element).get(0).hasAttribute("data-bottom")) {
+            var offsetBottom = $(this).data('bottom');
         }
-        else{
-           var offsetBottom = 200
+        else {
+            var offsetBottom = 200
         }
-        if ($(element).get(0).hasAttribute("data-top")){
+        if ($(element).get(0).hasAttribute("data-top")) {
             var offsetTop = $(this).data('top')
         }
-        else{
+        else {
             var offsetTop = 200
         }
         var watcher = scrollMonitor.create(element, {top: offsetTop, bottom: offsetBottom});
@@ -90,7 +108,7 @@ $(document).ready(function () {
 
         watcher.enterViewport(function () {
             //console.log(this + ' ' + action + ' ' + 'I have entered the viewport');
-            if ($(element).get(0).hasAttribute("data-delay")){
+            if ($(element).get(0).hasAttribute("data-delay")) {
                 $(element).css('animation-delay', delay + 's')
             }
             $(element).addClass(action);
@@ -108,7 +126,7 @@ $(document).ready(function () {
     date.setDate(date.getDate() + 1);
     $(".daynow").text(date.getDate());
     var month = date.getMonth();
-    switch(month) {
+    switch (month) {
         case 0:
         {
             $(".monthnow").text(' января');
@@ -174,14 +192,14 @@ $(document).ready(function () {
     dateEnd = date;
     //console.log(dateEnd);
 
-        var tomorrow = moment().endOf('day').valueOf() + 1;
-        var now = moment().valueOf();
-        var interval = (tomorrow - now) / 1000;
-        var clock = $('.clock').FlipClock(interval, {
-            clockFace: 'HourlyCounter',
-            countdown: true,
-            language: 'ru'
-        });
+    var tomorrow = moment().endOf('day').valueOf() + 1;
+    var now = moment().valueOf();
+    var interval = (tomorrow - now) / 1000;
+    var clock = $('.clock').FlipClock(interval, {
+        clockFace: 'HourlyCounter',
+        countdown: true,
+        language: 'ru'
+    });
 
 //CENTERED MODAL
     $(".start-modal").click(function () {

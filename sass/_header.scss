@@ -114,9 +114,11 @@ $color-h5: #898989;
   margin-bottom: .9em;
 }
 .top-sub-header{
-  color: $color-h5;
+  //color: $color-h5;
+  color: $brand-primary;
   max-width: 350px;
   margin-bottom: 1.5em;
+  font-size: 1.2em;
 }
 .header-img{
   margin: 18px auto 0;
