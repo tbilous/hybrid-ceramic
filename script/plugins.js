@@ -91,14 +91,14 @@ $(document).ready(function () {
         if ($(element).get(0).hasAttribute("data-bottom")) {
             var offsetBottom = $(this).data('bottom');
         }
-        else {
-            var offsetBottom = 200
+        else{
+           var offsetBottom = 100
         }
         if ($(element).get(0).hasAttribute("data-top")) {
             var offsetTop = $(this).data('top')
         }
-        else {
-            var offsetTop = 200
+        else{
+            var offsetTop = 100
         }
         var watcher = scrollMonitor.create(element, {top: offsetTop, bottom: offsetBottom});
         var action = $(this).data('animated');
