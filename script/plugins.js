@@ -103,8 +103,6 @@ $(document).ready(function () {
         var watcher = scrollMonitor.create(element, {top: offsetTop, bottom: offsetBottom});
         var action = $(this).data('animated');
         var delay = $(this).data('delay');
-        //console.log(delay.length);
-        //watcher.lock();
 
         watcher.enterViewport(function () {
             //console.log(this + ' ' + action + ' ' + 'I have entered the viewport');

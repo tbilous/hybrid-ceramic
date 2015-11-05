@@ -1,4 +1,4 @@
-/js/scrollMonitor.min.js
+
 # Include your project-specific ignores in this file
 # Read about how to use .gitignore: https://help.github.com/articles/ignoring-files
 
@@ -7,8 +7,7 @@
 addons
 bower_components
 node_modules
-.sass-cache
+
 css/styles.css.map
-js/plugins.min.js
 css/ionicons.css
 css/styles.css
